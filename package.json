@@ -1,0 +1,38 @@
+{
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
+  },
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "serve": "npx serve public"
+  },
+  "dependencies": {
+    "easy-peasy": "^5.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "5",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.17",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "babel-plugin-twin": "^1.0.2",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^2.2.19",
+    "twin.macro": "^2.8.2",
+    "typescript": "^4.5.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
