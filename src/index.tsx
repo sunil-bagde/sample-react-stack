@@ -5,6 +5,7 @@ import GlobalStyles from './styles/GlobalStyles'
 import App from './App'
 
 import { store } from "./store"
+console.log("store", store.getState());
 
 ReactDOM.render(
   <React.StrictMode>
