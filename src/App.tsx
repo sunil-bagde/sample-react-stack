@@ -1,12 +1,13 @@
 import tw from 'twin.macro'
 
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { TodoForm } from './components/TodoForm'
 import { TodoList } from './components/TodoList'
-import { Message } from './components/Message'
+
 import { Footer } from './components/Footer'
 import { Loader } from './components/Loader'
+import {Message} from "./components/Message";
 
 function App() {
   return (
