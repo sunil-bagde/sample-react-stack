@@ -39,7 +39,9 @@ export function TodoList({ filter }) {
   })
   return (
     <div className="Todo-List drop-shadow-lg">
-      <ul css={tw`  max-h-36 overflow-auto drop-shadow-lg `}>
+      <ul css={tw` max-h-36 overflow-auto drop-shadow-lg `} style={{
+        minHeight: 145
+      }}>
        {todos.map(todo => (
           <TodoItem
             key={todo.id}
