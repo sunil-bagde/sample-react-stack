@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
 import { useStoreState } from 'easy-peasy'
-import tw from 'twin.macro'
+import tw, {styled} from 'twin.macro'
 import { useStoreActions } from 'easy-peasy'
 
+const Ul = styled.ul`
+    min-height: 145px
+`
 const TodoItem = ({
   id = '',
   text = '',
@@ -39,8 +42,8 @@ export function TodoList({ filter }) {
   })
   return (
     <div className="Todo-List drop-shadow-lg">
-      <ul css={tw` max-h-36 overflow-auto drop-shadow-lg `} style={{
-        minHeight: 145
+      <Ul css={tw` max-h-36 overflow-auto drop-shadow-lg `} style={{
+
       }}>
        {todos.map(todo => (
           <TodoItem
@@ -48,7 +51,7 @@ export function TodoList({ filter }) {
             {...todo}
           />
         ))}
-      </ul>
+      </Ul>
     </div>
   )
 }
